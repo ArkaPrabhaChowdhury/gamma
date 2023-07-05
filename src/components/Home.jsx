@@ -9,7 +9,7 @@ import Bottom from './home/Bottom';
 const Home=()=> {
   return (
     <>
-      <NavBar/>
+      <NavBar service={false}/>
       <Hero/> 
       <Services/>
       <Portfolio/>

@@ -1,26 +1,38 @@
 import logo from "../../assets/logo.svg";
 import { Link } from "react-scroll";
-const NavBar = () => {
+const NavBar = ({ service }) => {
   return (
     <div>
       <header class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <a
+            class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+            href="/"
+          >
             <img src={logo} className="w-12 h-12" alt="logo" />
           </a>
           <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-20}
-              duration={500}
-            >
-              <button className="mr-5 group transition text-lg font-medium duration-300">
-                Home
-                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
-              </button>
-            </Link>
+            {service ? (
+              <a href="/">
+                <button className="mr-5 group transition text-lg font-medium duration-300">
+                  Home
+                  <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+                </button>
+              </a>
+            ) : (
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-20}
+                duration={500}
+              >
+                <button className="mr-5 group transition text-lg font-medium duration-300">
+                  Home
+                  <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+                </button>
+              </Link>
+            )}
             <Link
               to="services"
               spy={true}
@@ -45,18 +57,20 @@ const NavBar = () => {
                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
               </button>
             </Link>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-20}
-              duration={500}
-            >
-              <button className="mr-5 group transition text-lg font-medium duration-300">
-                About Us
-                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
-              </button>
-            </Link>
+            {!service && (
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-20}
+                duration={500}
+              >
+                <button className="mr-5 group transition text-lg font-medium duration-300">
+                  About Us
+                  <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+                </button>
+              </Link>
+            )}
           </nav>
           <Link
             to="contact"

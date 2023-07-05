@@ -1,12 +1,18 @@
 import React from "react";
+import NavBar from './../home/NavBar';
+import Contact from './../home/Contact';
+import Bottom from './../home/Bottom';
+import Portfolio from './../home/Portfolio';
+import TechStack from "../TechStack";
 
 const WebDevelopmentPage = () => {
   return (
     <div>
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+      <NavBar service={true}/>
+      <section className="text-gray-600 body-font pb-12">
+        <div className="container px-5 py-12 mx-auto">
           <div className="text-center mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+            <h1 className="text-3xl font-black text-gray-700 md:text-4xl p-2">
               Web Development Services
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
@@ -92,6 +98,10 @@ const WebDevelopmentPage = () => {
           </div>
         </div>
       </section>
+      <TechStack/>
+      <Portfolio/>
+      <Contact/>
+      <Bottom/>
     </div>
   );
 };

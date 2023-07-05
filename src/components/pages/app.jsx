@@ -1,12 +1,16 @@
 import React from 'react';
-
+import NavBar from './../home/NavBar';
+import Contact from './../home/Contact';
+import Bottom from './../home/Bottom';
+import Portfolio from './../home/Portfolio';
 const AppDevelopmentPage = () => {
   return (
     <div>
-      <section className="text-gray-600 body-font">
+      <NavBar service={true}/>
+      <section className="text-gray-600 body-font" id="services">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+            <h1 className="text-3xl font-black text-gray-700 md:text-4xl p-2">
               App Development
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
@@ -93,6 +97,9 @@ const AppDevelopmentPage = () => {
           </div>
         </div>
       </section>
+      <Portfolio/>
+      <Contact/>
+      <Bottom/>
     </div>
   );
 };
