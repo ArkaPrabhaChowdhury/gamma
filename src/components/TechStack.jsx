@@ -18,7 +18,7 @@ const TechStack = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap px-10 md:px-0">
+      <div className="block flex-wrap px-10 md:px-0 md:flex">
         <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
           <div className="w-20 h-20 inline-flex items-center justify-center rounded-full text-[#006b9f] mb-5 flex-shrink-0">
             <img src={node} className="w-24 h-24" alt="logo" />
