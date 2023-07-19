@@ -19,7 +19,7 @@ const Services = () => {
             >
               Our Services
             </h1>
-            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
               Tailored, Innovative, and Creative Services for Rapid Advancement
             </p>
             <div class="flex mt-6 justify-center">
