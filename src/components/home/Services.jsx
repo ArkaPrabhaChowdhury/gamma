@@ -40,7 +40,7 @@ const Services = () => {
                   and WordPress
                 </p>
               </div>
-              <Link class="mt-3 text-indigo-500 inline-flex items-center" to={"/web-development"} onClick={handleClick}>
+              <Link class="mt-3 text-[#006b9f] inline-flex items-center" to={"/web-development"} onClick={handleClick}>
                 Learn More
                 <svg
                   fill="none"
@@ -67,7 +67,7 @@ const Services = () => {
                   Harnessing the Power of Kotlin, Java, Swift, and Firebase for
                   Innovative App Development
                 </p>
-                <Link class="mt-3 text-indigo-500 inline-flex items-center" to={"/app-development"} onClick={handleClick}>
+                <Link class="mt-3 text-[#006b9f] inline-flex items-center" to={"/app-development"} onClick={handleClick}>
                   Learn More
                   <svg
                     fill="none"
@@ -95,7 +95,7 @@ const Services = () => {
                   Delivering Tailored ERP, Billing, User Management, HR, and
                   Supply Chain Systems
                 </p>
-                <Link class="mt-3 text-indigo-500 inline-flex items-center" to={"/software-development"} onClick={handleClick}>
+                <Link class="mt-3 text-[#006b9f] inline-flex items-center" to={"/software-development"} onClick={handleClick}>
                   Learn More
                   <svg
                     fill="none"
@@ -125,7 +125,7 @@ const Services = () => {
                 <p class="leading-relaxed text-base">
                   Mastering Meta Ads, Google Ads, and SEO for Digital Success
                 </p>
-                <Link class="mt-3 text-indigo-500 inline-flex items-center" to={"/digital-marketing"} onClick={handleClick}>
+                <Link class="mt-3 text-[#006b9f] inline-flex items-center" to={"/digital-marketing"} onClick={handleClick}>
                   Learn More
                   <svg
                     fill="none"
@@ -165,7 +165,7 @@ const Services = () => {
                   Crafting Engaging UI/UX and Striking Graphic Designs for
                   Unforgettable Impressions
                 </p>
-                <Link class="mt-3 text-indigo-500 inline-flex items-center" to={"/design"} onClick={handleClick}>
+                <Link class="mt-3 text-[#006b9f] inline-flex items-center" to={"/design"} onClick={handleClick}>
                   Learn More
                   <svg
                     fill="none"
@@ -203,7 +203,7 @@ const Services = () => {
                 <p class="leading-relaxed text-base">
                   Expert Tech Consultancy for Strategic Growth and Innovation
                 </p>
-                <Link class="mt-3 text-indigo-500 inline-flex items-center" to={"/tech-consultancy"} onClick={handleClick}>
+                <Link class="mt-3 text-[#006b9f] inline-flex items-center" to={"/tech-consultancy"} onClick={handleClick}>
                   Learn More
                   <svg
                     fill="none"

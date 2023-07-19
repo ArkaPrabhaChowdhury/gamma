@@ -25,7 +25,7 @@ const Hero = () => {
                       "captivating websites",
                       "powerful apps",
                       "customized software",
-                      "impactful digital marketing",
+                      "digital marketing",
                       "stunning designs",
                     ],
                     autoStart: true,

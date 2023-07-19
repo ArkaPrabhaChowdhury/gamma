@@ -17,9 +17,12 @@ const About = () => {
                   </h1>
                 </div>
                 <p class="px-4 mb-10  text-gray-900 leading-7">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam Lorem ipsum dolor sit amet.
+                  At Gamma Innovations, we are dedicated to empowering
+                  businesses with transformative technology solutions. With a
+                  dynamic team of industry experts, we leverage our expertise in
+                  app and website development to deliver innovative and tailored
+                  solutions that drive growth and propel businesses forward in
+                  the digital landscape.
                 </p>
                 <div class="flex flex-wrap items-center">
                   <div class="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">

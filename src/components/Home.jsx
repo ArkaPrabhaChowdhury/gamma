@@ -5,6 +5,7 @@ import Portfolio from './home/Portfolio';
 import About from "./home/About";
 import Contact from './home/Contact';
 import Bottom from './home/Bottom';
+import Prep from "./home/Prep";
 
 const Home=()=> {
   return (
@@ -12,6 +13,7 @@ const Home=()=> {
       <NavBar service={false}/>
       <Hero/> 
       <Services/>
+      <Prep/>
       <Portfolio/>
       <About/>
       <Contact/>

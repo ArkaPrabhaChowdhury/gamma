@@ -15,9 +15,11 @@ const Contact = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="text-base leading-relaxed mb-9 ml-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                  Whether you're looking to develop a cutting-edge app or create
+                  a dynamic website, our experienced team of professionals is
+                  ready to collaborate with you. We believe in providing
+                  tailored solutions that exceed your expectations. Contact us
+                  today and let's embark on a journey of innovation together.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 hidden md:flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -35,7 +37,9 @@ const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      Mytri Square, 2-41/11, 6/2, Gachibowli (SY.35P&36,
+                      Kothaguda) - Miyapur Rd, Prashanth Nagar Colony,
+                      Hyderabad, Telangana 500084
                     </p>
                   </div>
                 </div>
@@ -56,9 +60,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color">
-                      (+62)81 414 257 9980
-                    </p>
+                    <p className="text-base text-body-color">(+91)8037203903</p>
                   </div>
                 </div>
                 <div className="mb-8 flex w-full max-w-[370px]">
@@ -77,7 +79,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color">
-                      info@yourdomain.com
+                      gammainnovs@gmail.com
                     </p>
                   </div>
                 </div>
