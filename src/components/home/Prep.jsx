@@ -14,7 +14,7 @@ const Prep = () => {
           >
             Our expert developers are trained by 
           </h1>
-          <img src={gamma} alt="gamma" className="w-38 h-14"/>
+          <img src={gamma} alt="gamma" className="w-38 h-14 mt-1"/>
         </div>
         <p className="text-xl pt-2 leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
           Mentored by Google, Oracle, and PayPal engineers
