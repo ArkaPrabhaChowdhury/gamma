@@ -31,7 +31,7 @@ const Bottom = () => {
             </a>
             <a
               class="ml-3 text-gray-500"
-              href="https://www.instagram.com/gammainnovations/"
+              href="https://www.youtube.com/@GammaInnovations"
               target="_blank"
             >
               <svg
@@ -65,7 +65,7 @@ const Bottom = () => {
             </a>
             <a
               class="ml-3 text-gray-500"
-              href="https://www.youtube.com/@GammaInnovations"
+              href="https://www.instagram.com/gammainnovations/"
               target="_blank"
             >
               <svg
