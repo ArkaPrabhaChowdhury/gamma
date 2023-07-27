@@ -8,6 +8,18 @@ const Contact = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const finalSelectedOption = selectedOption || "Others";
   const handleSubmit = () => {
+    if(name==""){
+      toast("Please enter your name");
+      return;
+    }
+    else if(email==""){
+      toast("Please enter your email");
+      return;
+    }
+    else if(message==""){
+      toast("Please enter your message");
+      return;
+    }
     fetch(
       "https://24cv70uwh3.execute-api.ap-northeast-1.amazonaws.com/default/sendContactEmail",
       {
