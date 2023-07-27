@@ -3,9 +3,24 @@ import NavBar from './../home/NavBar';
 import Contact from './../home/Contact';
 import Bottom from './../home/Bottom';
 import Portfolio from './../home/Portfolio';
+import { Helmet } from "react-helmet";
 const AppDevelopmentPage = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gamma Innovations - App Development Services</title>
+        <meta name="description" content="Build cutting-edge mobile apps with Gamma Innovations' expert app development services. From concept to launch, we deliver innovative and user-friendly apps tailored to your business needs!" />
+        <meta name="keywords" content="Gamma Innovations, app development, website development, software development, digital marketing, tech consultancy, design" />
+        <link rel="canonical" href="https://www.gammainnovations.com/app-development" />
+        <meta property="og:title" content="Gamma Innovations - App Development Services" />
+        <meta property="og:description" content="Build cutting-edge mobile apps with Gamma Innovations' expert app development services. From concept to launch, we deliver innovative and user-friendly apps tailored to your business needs!" />
+        <meta property="og:image" content="https://www.gammainnovations.com/gamma.svg" />
+        <meta property="og:url" content="https://www.gammainnovations.com/app-development" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Gamma Innovations" />
+      </Helmet>
       <NavBar service={true}/>
       <section className="text-gray-600 body-font" id="services">
         <div className="container px-5 py-24 mx-auto">

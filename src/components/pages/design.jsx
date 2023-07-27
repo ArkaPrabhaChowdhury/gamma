@@ -1,12 +1,48 @@
-import React from 'react';
-import NavBar from './../home/NavBar';
-import Contact from './../home/Contact';
-import Bottom from './../home/Bottom';
-import Portfolio from './../home/Portfolio';
+import React from "react";
+import NavBar from "./../home/NavBar";
+import Contact from "./../home/Contact";
+import Bottom from "./../home/Bottom";
+import Portfolio from "./../home/Portfolio";
+import { Helmet } from "react-helmet";
 const DesignPage = () => {
   return (
     <div>
-      <NavBar service={true}/>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gamma Innovations - Design Services</title>
+        <meta
+          name="description"
+          content="Gamma Innovations offers expert design services, including web design, graphic design, and brand identity design. Enhance your online presence, elevate your brand, and leave a lasting impression with our creative design solutions!"
+        />
+        <meta
+          name="keywords"
+          content="Gamma Innovations, web design, graphic design, brand identity design, website development, digital marketing, tech consultancy, design"
+        />
+        <link
+          rel="canonical"
+          href="https://www.gammainnovations.com/design"
+        />
+        <meta
+          property="og:title"
+          content="Gamma Innovations - Design Services"
+        />
+        <meta
+          property="og:description"
+          content="Gamma Innovations offers expert design services, including web design, graphic design, and brand identity design. Enhance your online presence, elevate your brand, and leave a lasting impression with our creative design solutions!"
+        />
+        <meta
+          property="og:image"
+          content="https://www.gammainnovations.com/gamma.svg"
+        />
+        <meta
+          property="og:url"
+          content="https://www.gammainnovations.com/design"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Gamma Innovations" />
+      </Helmet>
+      <NavBar service={true} />
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
@@ -41,8 +77,8 @@ const DesignPage = () => {
                   Brand Identity Design
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Craft unique and memorable brand identities that resonate
-                  with your target audience and communicate your values.
+                  Craft unique and memorable brand identities that resonate with
+                  your target audience and communicate your values.
                 </p>
               </div>
             </div>
@@ -100,9 +136,9 @@ const DesignPage = () => {
           </div>
         </div>
       </section>
-      <Portfolio/>
-      <Contact/>
-      <Bottom/>
+      <Portfolio />
+      <Contact />
+      <Bottom />
     </div>
   );
 };

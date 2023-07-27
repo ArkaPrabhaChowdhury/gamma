@@ -3,9 +3,24 @@ import NavBar from './../home/NavBar';
 import Contact from './../home/Contact';
 import Bottom from './../home/Bottom';
 import Portfolio from './../home/Portfolio';
+import { Helmet } from "react-helmet";
 const ConsultantPage = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gamma Innovations - Tech Consultancy Services</title>
+        <meta name="description" content="Get expert tech consultancy services from Gamma Innovations. Stay ahead with cutting-edge technologies and strategic guidance to drive innovation and business success!" />
+        <meta name="keywords" content="Gamma Innovations, tech consultancy, website development, app development, software development, digital marketing, design" />
+        <link rel="canonical" href="https://www.gammainnovations.com/tech-consultancy" />
+        <meta property="og:title" content="Gamma Innovations - Tech Consultancy Services" />
+        <meta property="og:description" content="Get expert tech consultancy services from Gamma Innovations. Stay ahead with cutting-edge technologies and strategic guidance to drive innovation and business success!" />
+        <meta property="og:image" content="https://www.gammainnovations.com/gamma.svg" />
+        <meta property="og:url" content="https://www.gammainnovations.com/tech-consultancy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Gamma Innovations" />
+      </Helmet>
       <NavBar service={true}/>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">

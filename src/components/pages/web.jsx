@@ -1,14 +1,53 @@
 import React from "react";
-import NavBar from './../home/NavBar';
-import Contact from './../home/Contact';
-import Bottom from './../home/Bottom';
-import Portfolio from './../home/Portfolio';
+import NavBar from "./../home/NavBar";
+import Contact from "./../home/Contact";
+import Bottom from "./../home/Bottom";
+import Portfolio from "./../home/Portfolio";
 import TechStack from "../TechStack";
+import { Helmet } from "react-helmet";
 
 const WebDevelopmentPage = () => {
   return (
     <div>
-      <NavBar service={true}/>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+          Gamma Innovations - Web Development and Transformative Technology
+          Solutions
+        </title>
+        <meta
+          name="description"
+          content="Get your website built in the most creative and efficient manner with Gamma Innovations' expert web development services. Empower your business with transformative technology solutions today!"
+        />
+        <meta
+          name="keywords"
+          content="Gamma Innovations, web development, app development, software development, digital marketing, tech consultancy"
+        />
+        <link
+          rel="canonical"
+          href="https://www.gammainnovations.com/web-development"
+        />
+        <meta
+          property="og:title"
+          content="Gamma Innovations - Web Development and Transformative Technology Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Get your website built in the most creative and efficient manner with Gamma Innovations' expert web development services. Empower your business with transformative technology solutions today!"
+        />
+        <meta
+          property="og:image"
+          content="https://www.gammainnovations.com/gamma.svg"
+        />
+        <meta
+          property="og:url"
+          content="https://www.gammainnovations.com/web-development"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Gamma Innovations" />
+      </Helmet>
+      <NavBar service={true} />
       <section className="text-gray-600 body-font pb-12">
         <div className="container px-5 py-12 mx-auto">
           <div className="text-center mb-20">
@@ -16,7 +55,8 @@ const WebDevelopmentPage = () => {
               Web Development Services
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
-              Crafting Dynamic Websites with React, Angular, Node.js, PHP, and WordPress
+              Crafting Dynamic Websites with React, Angular, Node.js, PHP, and
+              WordPress
             </p>
             <div className="flex mt-6 justify-center">
               <div className="w-16 h-1 rounded-full bg-[#006b9f] inline-flex"></div>
@@ -42,7 +82,10 @@ const WebDevelopmentPage = () => {
                   Custom Website Development
                 </h2>
                 <p className="leading-relaxed text-base">
-                  We create custom websites tailored to your unique needs using the latest technologies and frameworks such as React, Angular, and Node.js. Our websites are designed to be responsive, user-friendly, and visually appealing.
+                  We create custom websites tailored to your unique needs using
+                  the latest technologies and frameworks such as React, Angular,
+                  and Node.js. Our websites are designed to be responsive,
+                  user-friendly, and visually appealing.
                 </p>
               </div>
             </div>
@@ -67,7 +110,10 @@ const WebDevelopmentPage = () => {
                   E-commerce Development
                 </h2>
                 <p className="leading-relaxed text-base">
-                  We specialize in building robust and scalable e-commerce solutions using platforms like Shopify, WooCommerce, and Magento. From product catalog management to secure payment integration, we've got you covered.
+                  We specialize in building robust and scalable e-commerce
+                  solutions using platforms like Shopify, WooCommerce, and
+                  Magento. From product catalog management to secure payment
+                  integration, we've got you covered.
                 </p>
               </div>
             </div>
@@ -91,17 +137,20 @@ const WebDevelopmentPage = () => {
                   Content Management Systems (CMS)
                 </h2>
                 <p className="leading-relaxed text-base">
-                  We leverage popular CMS platforms such as WordPress to create easy-to-manage websites. With a user-friendly interface and powerful features, you'll have full control over your website's content, making updates and modifications a breeze.
+                  We leverage popular CMS platforms such as WordPress to create
+                  easy-to-manage websites. With a user-friendly interface and
+                  powerful features, you'll have full control over your
+                  website's content, making updates and modifications a breeze.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <TechStack/>
-      <Portfolio/>
-      <Contact/>
-      <Bottom/>
+      <TechStack />
+      <Portfolio />
+      <Contact />
+      <Bottom />
     </div>
   );
 };

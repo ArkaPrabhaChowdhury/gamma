@@ -1,12 +1,48 @@
-import React from 'react';
-import NavBar from './../home/NavBar';
-import Contact from './../home/Contact';
-import Bottom from './../home/Bottom';
-import Portfolio from './../home/Portfolio';
+import React from "react";
+import NavBar from "./../home/NavBar";
+import Contact from "./../home/Contact";
+import Bottom from "./../home/Bottom";
+import Portfolio from "./../home/Portfolio";
+import { Helmet } from "react-helmet";
 const DigitalPage = () => {
   return (
     <div>
-      <NavBar service={true}/>
+      <Helmet>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gamma Innovations - Digital Marketing Solutions</title>
+        <meta
+          name="description"
+          content="Supercharge your online presence with Gamma Innovations' expert digital marketing solutions. Reach your target audience and achieve business growth through effective digital strategies!"
+        />
+        <meta
+          name="keywords"
+          content="Gamma Innovations, website development, app development, software development, digital marketing, tech consultancy, design"
+        />
+        <link
+          rel="canonical"
+          href="https://www.gammainnovations.com/digital-marketing"
+        />
+        <meta
+          property="og:title"
+          content="Gamma Innovations - Digital Marketing Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Supercharge your online presence with Gamma Innovations' expert digital marketing solutions. Reach your target audience and achieve business growth through effective digital strategies!"
+        />
+        <meta
+          property="og:image"
+          content="https://www.gammainnovations.com/gamma.svg"
+        />
+        <meta
+          property="og:url"
+          content="https://www.gammainnovations.com/digital-marketing"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Gamma Innovations" />
+      </Helmet>
+      <NavBar service={true} />
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
@@ -104,9 +140,9 @@ const DigitalPage = () => {
           </div>
         </div>
       </section>
-      <Portfolio/>
-      <Contact/>
-      <Bottom/>
+      <Portfolio />
+      <Contact />
+      <Bottom />
     </div>
   );
 };
