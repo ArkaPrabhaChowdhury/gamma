@@ -120,7 +120,7 @@ const Services = () => {
               </div>
               <div class="flex-grow">
                 <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
-                  Digital Marketting
+                  Digital Marketing
                 </h2>
                 <p class="leading-relaxed text-base">
                   Mastering Meta Ads, Google Ads, and SEO for Digital Success

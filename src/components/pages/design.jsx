@@ -4,6 +4,7 @@ import Contact from "./../home/Contact";
 import Bottom from "./../home/Bottom";
 import Portfolio from "./../home/Portfolio";
 import { Helmet } from "react-helmet";
+import ContactForm from "../ContactForm";
 const DesignPage = () => {
   return (
     <div>
@@ -19,10 +20,7 @@ const DesignPage = () => {
           name="keywords"
           content="Gamma Innovations, web design, graphic design, brand identity design, website development, digital marketing, tech consultancy, design"
         />
-        <link
-          rel="canonical"
-          href="https://www.gammainnovations.com/design"
-        />
+        <link rel="canonical" href="https://www.gammainnovations.com/design" />
         <meta
           property="og:title"
           content="Gamma Innovations - Design Services"
@@ -58,80 +56,89 @@ const DesignPage = () => {
             </div>
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-10 h-10"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                </svg>
+            <div className="md:w-1/2">
+              <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
+                <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-10 h-10"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                    Brand Identity Design
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Craft unique and memorable brand identities that resonate
+                    with your target audience and communicate your values.
+                  </p>
+                </div>
               </div>
-              <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  Brand Identity Design
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Craft unique and memorable brand identities that resonate with
-                  your target audience and communicate your values.
-                </p>
+              <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
+                <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-10 h-10"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="12" cy="5" r="3"></circle>
+                    <path d="M12 17s-8-4-8-9V2h16v6s-4 2-8 2-8-2-8-2v8a6 6 0 008 6z"></path>
+                  </svg>
+                </div>
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                    Web Design and Development
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Create visually appealing and user-friendly websites that
+                    effectively showcase your products and services.
+                  </p>
+                </div>
+              </div>
+              <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
+                <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    className="w-10 h-10"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 22s8-4 8-9v-2c0-5-8-9-8-9s-8 4-8 9v2c0 5 8 9 8 9z"></path>
+                    <circle cx="12" cy="8" r="3"></circle>
+                  </svg>
+                </div>
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                    Graphic Design
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Design eye-catching graphics, illustrations, and marketing
+                    materials that capture attention and convey your message
+                    effectively.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-10 h-10"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="12" cy="5" r="3"></circle>
-                  <path d="M12 17s-8-4-8-9V2h16v6s-4 2-8 2-8-2-8-2v8a6 6 0 008 6z"></path>
-                </svg>
-              </div>
-              <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  Web Design and Development
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Create visually appealing and user-friendly websites that
-                  effectively showcase your products and services.
-                </p>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-10 h-10"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 22s8-4 8-9v-2c0-5-8-9-8-9s-8 4-8 9v2c0 5 8 9 8 9z"></path>
-                  <circle cx="12" cy="8" r="3"></circle>
-                </svg>
-              </div>
-              <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  Graphic Design
-                </h2>
-                <p className="leading-relaxed text-base">
-                  Design eye-catching graphics, illustrations, and marketing
-                  materials that capture attention and convey your message
-                  effectively.
-                </p>
-              </div>
+            <div className="md:w-1/2 pt-12">
+              <h1 className="font-bold text-2xl text-center pb-16">
+                Ignite your creativity with a FREE 45-Minute Call with Our
+                Expert Designers! 🎨📞
+              </h1>
+              <ContactForm/>
             </div>
           </div>
         </div>

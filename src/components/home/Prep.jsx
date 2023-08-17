@@ -6,7 +6,7 @@ import gamma from "../../assets/gammaprep.png";
 import microsoft from "../../assets/microsoft.svg";
 const Prep = () => {
   return (
-    <div className="pb-24">
+    <div className="pb-24 pt-10">
       <div className="text-center mb-20 ">
         <div className="block gap-2 justify-center md:flex">
           <h1
@@ -15,7 +15,7 @@ const Prep = () => {
           >
             Our expert developers are trained by 
           </h1>
-          <img src={gamma} alt="gamma" className="w-38 h-12 m-4 mx-auto md:m-0 md:mt-2"/>
+          <a href="https://gammaprep.com" target="_blank"><img src={gamma} alt="gamma" className="w-38 h-12 m-4 mx-auto md:m-0 md:mt-2"/></a>
         </div>
         <p className="text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mt-2 text-gray-500">
           Mentored by Google, Oracle, Microsoft and PayPal engineers
