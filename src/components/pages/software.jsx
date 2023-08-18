@@ -5,6 +5,9 @@ import Bottom from "./../home/Bottom";
 import Portfolio from "./../home/Portfolio";
 import { Helmet } from "react-helmet";
 import ContactForm from "../ContactForm";
+import { AiOutlineSolution, AiOutlineUsergroupAdd } from "react-icons/ai";
+import { MdPayments } from "react-icons/md";
+
 const SoftwareDevelopmentPage = () => {
   return (
     <div>
@@ -60,20 +63,10 @@ const SoftwareDevelopmentPage = () => {
               </div>
             </div>
             <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-              <div className="md:w-1/2">
+              <div className="md:w-1/2 order-2 md:order-1 pt-12 md:pt-0">
                 <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                   <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-10 h-10"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                    <AiOutlineSolution className="w-10 h-10" />
                   </div>
                   <div className="flex-grow">
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -87,18 +80,7 @@ const SoftwareDevelopmentPage = () => {
                 </div>
                 <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                   <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-10 h-10"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                      <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
+                    <MdPayments className="w-10 h-10" />
                   </div>
                   <div className="flex-grow">
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -112,17 +94,7 @@ const SoftwareDevelopmentPage = () => {
                 </div>
                 <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                   <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="w-10 h-10"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
+                    <AiOutlineUsergroupAdd  className="w-10 h-10" />
                   </div>
                   <div className="flex-grow">
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -135,7 +107,7 @@ const SoftwareDevelopmentPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="md:w-1/2 pt-12">
+              <div className="md:w-1/2 order-1 md:order-2 pt-12">
                 <h1 className="font-bold text-2xl text-center pb-16">
                   Unlock Your Potential with a FREE 45-Minute Software
                   Development Discussion! 💻📞

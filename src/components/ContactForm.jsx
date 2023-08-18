@@ -1,12 +1,42 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 import ContactBg from "./ContactBg";
 
-const ContactForm = () => {
+const ContactForm = ({service}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
   const finalSelectedOption = selectedOption || "Others";
+
+  useEffect(() => {
+    // Logic to set the default value based on the pageId from the URL
+    const pageId = window.location.pathname.split('/').pop();
+    const defaultValue = determineDefaultValue(pageId);
+    console.log(pageId);
+    setSelectedOption(defaultValue);
+  }, []);
+
+  const determineDefaultValue = (pageId) => {
+
+    switch (pageId) {
+      case 'web-development':
+        return 'Website development';
+      case 'app-development':
+        return 'App development';
+      case 'software-development':
+        return 'Customized Software development';
+      case 'design':
+        return 'Designing';
+      case 'digital-marketing':
+        return 'Digital marketing';
+      case 'tech-consultancy':
+        return 'Tech consultancy';
+      default:
+        return '';
+    }
+  };
+
   const handleSubmit = () => {
     if (name == "") {
       toast("Please enter your name");

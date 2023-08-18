@@ -5,6 +5,10 @@ import Bottom from "./../home/Bottom";
 import Portfolio from "./../home/Portfolio";
 import { Helmet } from "react-helmet";
 import ContactForm from "../ContactForm";
+import { RiSeoLine } from "react-icons/ri";
+import { MdOutlineMail } from "react-icons/md";
+import { TbWorldShare } from "react-icons/tb";
+
 const DigitalPage = () => {
   return (
     <div>
@@ -59,24 +63,10 @@ const DigitalPage = () => {
             </div>
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 order-2 md:order-1 pt-12 md:pt-0">
               <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                 <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-10 h-10"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 20h9"></path>
-                    <path d="M12 4h9"></path>
-                    <path d="M4 12h9"></path>
-                    <path d="M4 12L12 20"></path>
-                    <path d="M4 12L12 4"></path>
-                  </svg>
+                  <RiSeoLine className="w-10 h-10" />
                 </div>
                 <div className="flex-grow">
                   <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -90,18 +80,7 @@ const DigitalPage = () => {
               </div>
               <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                 <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-10 h-10"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="12" cy="7" r="4"></circle>
-                    <path d="M12 2v3m0 12v3m-9-6h3m12 0h3M3 12h3m0-9l9 9-9 9"></path>
-                  </svg>
+                  <TbWorldShare className="w-10 h-10" />
                 </div>
                 <div className="flex-grow">
                   <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -115,19 +94,7 @@ const DigitalPage = () => {
               </div>
               <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                 <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-10 h-10"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                    <path d="M20 4h-7L7 12v10h10"></path>
-                    <path d="M14 16l-4 4m4-4V5"></path>
-                  </svg>
+                 <MdOutlineMail className="w-10 h-10" />
                 </div>
                 <div className="flex-grow">
                   <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -141,7 +108,7 @@ const DigitalPage = () => {
               </div>
             </div>
 
-            <div className="md:w-1/2 pt-12">
+            <div className="md:w-1/2 order-1 md:order-2 pt-12">
               <h1 className="font-bold text-2xl text-center pb-16">
               Supercharge Your Reach with 15 Days of FREE Digital Ads! 🌐📢
               </h1>

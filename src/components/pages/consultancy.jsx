@@ -5,6 +5,9 @@ import Bottom from "./../home/Bottom";
 import Portfolio from "./../home/Portfolio";
 import { Helmet } from "react-helmet";
 import ContactForm from "../ContactForm";
+import { PiStrategyBold } from "react-icons/pi";
+import { LiaDigitalTachographSolid } from "react-icons/lia";
+import { GiGrowth } from "react-icons/gi";
 const ConsultantPage = () => {
   return (
     <div>
@@ -59,21 +62,10 @@ const ConsultantPage = () => {
             </div>
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 order-2 md:order-1 pt-12 md:pt-0">
               <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                 <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-10 h-10"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 22s8-4 8-9v-2c0-5-8-9-8-9s-8 4-8 9v2c0 5 8 9 8 9z"></path>
-                    <circle cx="12" cy="8" r="3"></circle>
-                  </svg>
+                  <PiStrategyBold className="w-10 h-10" />
                 </div>
                 <div className="flex-grow">
                   <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -87,19 +79,7 @@ const ConsultantPage = () => {
               </div>
               <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                 <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-10 h-10"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 17l4 4 4-4m-4-5v9"></path>
-                    <path d="M20 4h-7L7 12v10h10"></path>
-                    <path d="M14 16l-4 4m4-4V5"></path>
-                  </svg>
+                 <GiGrowth className="w-10 h-10" />
                 </div>
                 <div className="flex-grow">
                   <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -113,18 +93,7 @@ const ConsultantPage = () => {
               </div>
               <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                 <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-10 h-10"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle cx="12" cy="5" r="3"></circle>
-                    <path d="M12 17s-8-4-8-9V2h16v6s-4 2-8 2-8-2-8-2v8a6 6 0 008 6z"></path>
-                  </svg>
+                  <LiaDigitalTachographSolid className="w-10 h-10" />
                 </div>
                 <div className="flex-grow">
                   <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -137,7 +106,7 @@ const ConsultantPage = () => {
                 </div>
               </div>
             </div>
-            <div className="md:w-1/2 pt-12">
+            <div className="md:w-1/2 order-1 md:order-2 pt-12">
               <h1 className="font-bold text-2xl text-center pb-16">
                 Unlock Your Potential with a FREE 45-Minute Consultation Call!
                 🚀📞
