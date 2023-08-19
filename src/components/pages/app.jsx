@@ -59,7 +59,7 @@ const AppDevelopmentPage = () => {
               <div className="w-16 h-1 rounded-full bg-[#006b9f] inline-flex"></div>
             </div>
           </div>
-          <div className="flex flex-wrap px-24 sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+          <div className="flex flex-wrap lg:px-24 sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
             <div className="md:w-1/2 order-2 md:order-1 pt-12 md:pt-0">
             <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
               <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
@@ -104,7 +104,7 @@ const AppDevelopmentPage = () => {
               </div>
             </div>
             </div>
-            <div className="md:w-1/2 order-1 md:order-2 pt-6">
+            <div className="md:w-1/2 order-1 md:order-2 pt-6 px-6 md:px-0">
               <h1 className="font-bold text-2xl text-center pb-16">
                 Fuel Your Innovation with a FREE 45-Minute App Dev Consultation Call! 📱📞 
               </h1>

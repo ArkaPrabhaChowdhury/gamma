@@ -2,40 +2,39 @@ import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import ContactBg from "./ContactBg";
 
-const ContactForm = ({service}) => {
+const ContactForm = ({ service }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
-  const [contact,setContact]=useState("");
-  const [phone,setPhone] = useState("");
+  const [contact, setContact] = useState("");
+  const [phone, setPhone] = useState("");
   const finalSelectedOption = selectedOption || "Others";
 
   useEffect(() => {
     // Logic to set the default value based on the pageId from the URL
-    const pageId = window.location.pathname.split('/').pop();
+    const pageId = window.location.pathname.split("/").pop();
     const defaultValue = determineDefaultValue(pageId);
     console.log(pageId);
     setSelectedOption(defaultValue);
   }, []);
 
   const determineDefaultValue = (pageId) => {
-
     switch (pageId) {
-      case 'web-development':
-        return 'Website development';
-      case 'app-development':
-        return 'App development';
-      case 'software-development':
-        return 'Customized Software development';
-      case 'design':
-        return 'Designing';
-      case 'digital-marketing':
-        return 'Digital marketing';
-      case 'tech-consultancy':
-        return 'Tech consultancy';
+      case "web-development":
+        return "Website development";
+      case "app-development":
+        return "App development";
+      case "software-development":
+        return "Customized Software development";
+      case "design":
+        return "Designing";
+      case "digital-marketing":
+        return "Digital marketing";
+      case "tech-consultancy":
+        return "Tech consultancy";
       default:
-        return '';
+        return "";
     }
   };
 
@@ -59,8 +58,8 @@ const ContactForm = ({service}) => {
         body: JSON.stringify({
           senderName: name,
           senderEmail: email,
-          phone:phone,
-          contact:contact,
+          phone: phone,
+          contact: contact,
           message: message,
           selectedOption: finalSelectedOption,
         }),
@@ -71,13 +70,12 @@ const ContactForm = ({service}) => {
   };
 
   const handleWhatsappChange = (e) => {
-    if(e.target.checked){
+    if (e.target.checked) {
       setContact("Contact me via Whatsapp");
-    }
-    else{
+    } else {
       setContact("Contact me via email only");
     }
-  }
+  };
   return (
     <div>
       <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
@@ -102,7 +100,7 @@ const ContactForm = ({service}) => {
           value={phone}
           className="border-[f0f0f0] w-full rounded border py-3 my-4 px-[14px] text-base text-body-color outline-none focus:border-gray-400 focus-visible:shadow-none"
         />
-        <input 
+        <input
           type="checkbox"
           className="mr-2"
           id="whatsapp"
@@ -144,7 +142,9 @@ const ContactForm = ({service}) => {
             Send Message
           </button>
         </div>
-        <ContactBg/>    
+        <div className="hidden lg:block">
+          <ContactBg />
+        </div>
       </div>
     </div>
   );

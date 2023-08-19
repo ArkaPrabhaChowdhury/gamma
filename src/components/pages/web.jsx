@@ -50,7 +50,7 @@ const WebDevelopmentPage = () => {
         <meta property="og:site_name" content="Gamma Innovations" />
       </Helmet>
       <NavBar service={true} />
-      <div className="flex flex-wrap px-40">
+      <div className="flex flex-wrap lg:px-40">
         <div className="w-full p-4">
           <section className="text-gray-600 body-font pb-12">
             <div className="container px-5 py-12 mx-auto">
@@ -115,7 +115,7 @@ const WebDevelopmentPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="md:w-1/2 order-1 md:order-2 pt-12">
+                <div className="md:w-1/2 order-1 md:order-2 pt-12 px-6 md:px-0">
                   <h1 className="font-bold text-2xl text-center pb-16">
                     Unlock Your Web Development Potential with a FREE 45-Minute
                     Consultation Call! 🌐📞
