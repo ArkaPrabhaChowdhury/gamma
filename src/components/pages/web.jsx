@@ -50,7 +50,7 @@ const WebDevelopmentPage = () => {
         <meta property="og:site_name" content="Gamma Innovations" />
       </Helmet>
       <NavBar service={true} />
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap px-40">
         <div className="w-full p-4">
           <section className="text-gray-600 body-font pb-12">
             <div className="container px-5 py-12 mx-auto">

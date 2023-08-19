@@ -7,6 +7,8 @@ const ContactForm = ({service}) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
+  const [contact,setContact]=useState("");
+  const [phone,setPhone] = useState("");
   const finalSelectedOption = selectedOption || "Others";
 
   useEffect(() => {
@@ -44,9 +46,6 @@ const ContactForm = ({service}) => {
     } else if (email == "") {
       toast("Please enter your email");
       return;
-    } else if (message == "") {
-      toast("Please enter your message");
-      return;
     }
     fetch(
       "https://24cv70uwh3.execute-api.ap-northeast-1.amazonaws.com/default/sendContactEmail",
@@ -60,13 +59,25 @@ const ContactForm = ({service}) => {
         body: JSON.stringify({
           senderName: name,
           senderEmail: email,
+          phone:phone,
+          contact:contact,
           message: message,
           selectedOption: finalSelectedOption,
         }),
       }
     );
     toast("Thanks for reaching out! We will contact you soon.");
+    setMessage("");
   };
+
+  const handleWhatsappChange = (e) => {
+    if(e.target.checked){
+      setContact("Contact me via Whatsapp");
+    }
+    else{
+      setContact("Contact me via email only");
+    }
+  }
   return (
     <div>
       <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
@@ -84,6 +95,22 @@ const ContactForm = ({service}) => {
           value={email}
           className="border-[f0f0f0] w-full rounded border py-3 my-4 px-[14px] text-base text-body-color outline-none focus:border-gray-400 focus-visible:shadow-none"
         />
+        <input
+          type="text"
+          onChange={(e) => setPhone(e.target.value)}
+          placeholder="Your Whatsapp number (preferred)"
+          value={phone}
+          className="border-[f0f0f0] w-full rounded border py-3 my-4 px-[14px] text-base text-body-color outline-none focus:border-gray-400 focus-visible:shadow-none"
+        />
+        <input 
+          type="checkbox"
+          className="mr-2"
+          id="whatsapp"
+          name="whatsapp"
+          value="whatsapp"
+          onChange={handleWhatsappChange}
+        />
+        <label for="whatsapp">I want to be contacted via Whatsapp</label>
         <select
           onChange={(e) => setSelectedOption(e.target.value)}
           value={selectedOption}
