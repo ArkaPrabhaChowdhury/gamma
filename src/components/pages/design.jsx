@@ -116,8 +116,7 @@ const DesignPage = () => {
             </div>
             <div className="md:w-1/2 order-1 md:order-2 pt-12">
               <h1 className="font-bold text-2xl text-center pb-16">
-                Ignite your creativity with a FREE 45-Minute Call with Our
-                Expert Designers! 🎨📞
+              Schedule a free 30-minute strategy call with our experts! 🎨📞
               </h1>
               <ContactForm/>
             </div>
