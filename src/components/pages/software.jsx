@@ -109,8 +109,7 @@ const SoftwareDevelopmentPage = () => {
               </div>
               <div className="md:w-1/2 order-1 md:order-2 pt-12 px-6 md:px-0">
                 <h1 className="font-bold text-2xl text-center pb-16">
-                  Unlock Your Potential with a FREE 45-Minute Software
-                  Development Discussion! 💻📞
+                Schedule a free 30-minute strategy call with our experts! 💻📞
                 </h1>
                 <ContactForm />
               </div>

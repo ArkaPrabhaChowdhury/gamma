@@ -112,7 +112,7 @@ const DigitalPage = () => {
 
             <div className="md:w-1/2 order-1 md:order-2 pt-12 px-6 md:px-0">
               <h1 className="font-bold text-2xl text-center pb-16">
-                Supercharge Your Reach with 15 Days of FREE Digital Ads! 🌐📢
+              Schedule a free 30-minute strategy call with our experts! 🎨📞
               </h1>
               <ContactForm />
             </div>

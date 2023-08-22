@@ -61,7 +61,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color">(+91)8037203903</p>
+                    <p className="text-base text-body-color">(+91)6378211571</p>
                   </div>
                 </div>
                 <div className="mb-8 flex w-full max-w-[370px]">
@@ -80,7 +80,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color">
-                      gammainnovs@gmail.com
+                      info@gammainnovations.com
                     </p>
                   </div>
                 </div>
