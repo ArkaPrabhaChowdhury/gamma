@@ -6,8 +6,12 @@ import Portfolio from "./../home/Portfolio";
 import TechStack from "../TechStack";
 import { Helmet } from "react-helmet";
 import ContactForm from "../ContactForm";
-import {CgShoppingCart, CgWebsite} from "react-icons/cg"
-import {TbDeviceDesktopCog} from "react-icons/tb"
+import { CgShoppingCart, CgWebsite } from "react-icons/cg";
+import { TbDeviceDesktopCog } from "react-icons/tb";
+import web1 from "../../assets/work1.png";
+import web2 from "../../assets/web2.png";
+import web3 from "../../assets/web3.png";
+
 const WebDevelopmentPage = () => {
   return (
     <div>
@@ -53,8 +57,8 @@ const WebDevelopmentPage = () => {
       <div className="flex flex-wrap lg:px-40">
         <div className="w-full p-4">
           <section className="text-gray-600 body-font pb-12">
-            <div className="container px-5 py-12 mx-auto">
-              <div className="text-center mb-20">
+            <div className="container px-5 py-6 md:py-12 mx-auto">
+              <div className="text-center  md:mb-20">
                 <h1 className="text-3xl font-black text-gray-700 md:text-4xl p-2">
                   Web Development Services
                 </h1>
@@ -71,7 +75,7 @@ const WebDevelopmentPage = () => {
                 <div className="md:w-1/2 order-2 md:order-1 pt-12 md:pt-0">
                   <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                     <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                      <CgWebsite className="w-10 h-10"/>
+                      <CgWebsite className="w-10 h-10" />
                     </div>
                     <div className="flex-grow">
                       <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -86,7 +90,7 @@ const WebDevelopmentPage = () => {
                   </div>
                   <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                     <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                      <CgShoppingCart className="w-10 h-10"/>
+                      <CgShoppingCart className="w-10 h-10" />
                     </div>
                     <div className="flex-grow">
                       <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -101,7 +105,7 @@ const WebDevelopmentPage = () => {
                   </div>
                   <div className="p-4 md:w-1/2 flex flex-col text-center items-center">
                     <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-[#006b9f] mb-5 flex-shrink-0">
-                      <TbDeviceDesktopCog className="w-10 h-10"/>
+                      <TbDeviceDesktopCog className="w-10 h-10" />
                     </div>
                     <div className="flex-grow">
                       <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -129,7 +133,96 @@ const WebDevelopmentPage = () => {
       </div>
 
       <TechStack />
-      <Portfolio />
+      <div>
+        <section class="text-gray-600 body-font bg-stone-100">
+          <div class="container px-5 pt-12 pb-24 mx-auto" id="portfolio">
+            <div class="flex flex-col text-center w-full mb-20">
+              <h1 class="text-3xl font-black text-gray-700 md:text-4xl p-2 ">
+                Our Work
+              </h1>
+              <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                Unlocking Creativity and Innovation - Showcasing Our Finest
+                Works
+              </p>
+              <div class="flex mt-6 justify-center">
+                <div class="w-16 h-1 rounded-full bg-[#006b9f] inline-flex"></div>
+              </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative">
+                  <img
+                    alt="gallery"
+                    class="absolute inset-0 w-full h-full object-center"
+                    src={web1}
+                  />
+                  <a href="https://www.TremGlobal.com" target="_blank">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-[#006b9f] mb-1">
+                        Website
+                      </h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                        TremGlobal
+                      </h1>
+                      <p class="leading-relaxed">
+                        Remarkable platform serves as a gateway to the dynamic
+                        real estate markets of Turkey and Dubai
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative">
+                  <img
+                    alt="gallery"
+                    class="absolute inset-0 w-full h-full"
+                    src={web2}
+                  />
+                  <a href="https://outsavvy.com" target="_blank">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-[#006b9f] mb-1">
+                        Website
+                      </h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                        Outsavvy
+                      </h1>
+                      <p class="leading-relaxed">
+                        {" "}
+                        This cutting-edge platform is dedicated to enhancing the
+                        LGBTQ+ event experience in the UK
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative">
+                  <img
+                    alt="gallery"
+                    class="absolute inset-0 w-full h-full"
+                    src={web3}
+                  />
+                  <a href="https://www.tutorix.com" target="_blank">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-[#006b9f] mb-1">
+                        Website
+                      </h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                        Tutorix
+                      </h1>
+                      <p class="leading-relaxed">
+                        Tutorix.com embodies the essence of modern online
+                        education, offering a comprehensive platform
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
       <Contact />
       <Bottom />
     </div>

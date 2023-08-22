@@ -48,8 +48,8 @@ const ConsultantPage = () => {
       </Helmet>
       <NavBar service={true} />
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="text-center mb-20">
+        <div className="container px-5 py-6 md:py-24 mx-auto">
+          <div className="text-center md:mb-20">
             <h1 className="text-3xl font-black text-gray-700 md:text-4xl p-2">
               Tech Consultancy Services
             </h1>

@@ -7,6 +7,7 @@ import Contact from "./home/Contact";
 import Bottom from "./home/Bottom";
 import Prep from "./home/Prep";
 import { Helmet } from "react-helmet";
+import Featured from "./home/Featured";
 
 const Home = () => {
   return (
@@ -47,6 +48,7 @@ const Home = () => {
       <Prep />
       <Portfolio />
       <About />
+      <Featured/>
       <Contact />
       <Bottom />
     </>

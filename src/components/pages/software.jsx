@@ -49,8 +49,8 @@ const SoftwareDevelopmentPage = () => {
       <NavBar service={true} />
       <div>
         <section className="text-gray-600 body-font pb-12">
-          <div className="container px-5 py-24 mx-auto">
-            <div className="text-center mb-20">
+          <div className="container px-5 py-6 md:py-24 mx-auto">
+            <div className="text-center md:mb-20">
               <h1 className="text-3xl font-black text-gray-700 md:text-4xl p-2">
                 Software Development
               </h1>
