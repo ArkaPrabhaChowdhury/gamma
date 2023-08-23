@@ -124,6 +124,7 @@ const DesignPage = () => {
         </div>
       </section>
       <Portfolio />
+      <Featured />
       <Contact />
       <Bottom />
     </div>

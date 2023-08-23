@@ -213,6 +213,7 @@ const DigitalPage = () => {
           </div>
         </section>
       </div>
+      <Featured />
       <Contact />
       <Bottom />
     </div>

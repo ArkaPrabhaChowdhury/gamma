@@ -222,6 +222,7 @@ const WebDevelopmentPage = () => {
           </div>
         </section>
       </div>
+      <Featured />
       <Contact />
       <Bottom />
     </div>

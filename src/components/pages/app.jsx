@@ -212,6 +212,7 @@ const AppDevelopmentPage = () => {
           </div>
         </section>
       </div>
+      <Featured />
       <Contact />
       <Bottom />
     </div>

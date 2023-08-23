@@ -116,6 +116,7 @@ const ConsultantPage = () => {
         </div>
       </section>
       <Portfolio />
+      <Featured />
       <Contact />
       <Bottom />
     </div>
