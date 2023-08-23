@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import ContactForm from "../ContactForm";
 import { AiOutlineSolution, AiOutlineUsergroupAdd } from "react-icons/ai";
 import { MdPayments } from "react-icons/md";
+import Featured from "../home/Featured";
 
 const SoftwareDevelopmentPage = () => {
   return (
@@ -118,6 +119,7 @@ const SoftwareDevelopmentPage = () => {
         </section>
       </div>
       <Portfolio />
+      <Featured />
       <Contact />
       <Bottom />
     </div>
