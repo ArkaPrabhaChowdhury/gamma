@@ -16,7 +16,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="block mt-10 gap-2 md:flex md:pt-0">
-              <p className="mb-8 leading-relaxed text-2xl">Your visonary gateway to</p>
+              <p className="mb-8 leading-relaxed text-2xl">Your visionary gateway to</p>
               <p className="mb-8 leading-relaxed text-2xl font-bold italic">
                 {" "}
                 <TypewriterComponent
