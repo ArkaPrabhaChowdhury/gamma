@@ -5,6 +5,7 @@ import Bottom from "./../home/Bottom";
 import Portfolio from "./../home/Portfolio";
 import { Helmet } from "react-helmet";
 import ContactForm from "../ContactForm";
+import Featured from "../home/Featured";
 import {
   TbBrandReactNative,
   TbDatabaseEdit,

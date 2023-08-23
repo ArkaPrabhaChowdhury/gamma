@@ -3,6 +3,7 @@ import NavBar from "./../home/NavBar";
 import Contact from "./../home/Contact";
 import Bottom from "./../home/Bottom";
 import Portfolio from "./../home/Portfolio";
+import Featured from "../home/Featured";
 import { Helmet } from "react-helmet";
 import ContactForm from "../ContactForm";
 import { RiSeoLine } from "react-icons/ri";
