@@ -5,7 +5,7 @@ import app from "./assets/app.svg";
 import digital from "./assets/marketing.svg";
 import software from "./assets/software.svg";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/image"
 const Services = () => {
   const  handleClick = () => {
     console.log("Hello");

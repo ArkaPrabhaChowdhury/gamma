@@ -9,7 +9,7 @@ import { TbWorldShare } from "react-icons/tb";
 import dig1 from "../assets/work3.png";
 import dig2 from "../assets/dig2.png";
 import dig3 from "../assets/dig3.png";
-import Image from "next/image";
+
 import Navbar from "../Navbar";
 
 export const metadata = {
@@ -131,10 +131,10 @@ const DigitalPage = () => {
             <div class="flex flex-wrap -m-4">
               <div class="lg:w-1/3 sm:w-1/2 p-4">
                 <div class="flex relative">
-                  <Image
+                  <img
                     alt="gallery"
                     class="absolute inset-0 w-full h-full object-center"
-                    src={dig1}
+                    src="https://i.postimg.cc/FzdDbk1s/work3.webp"
                   />
                   <a href="https://www.freelancer.com/u/gammainnovations/portfolio/from-dubai-to-a-million-menakarts-digital-triumph-11267093?w=f&ngsw-bypass=" target="_blank">
                     <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
@@ -153,10 +153,11 @@ const DigitalPage = () => {
               </div>
               <div class="lg:w-1/3 sm:w-1/2 p-4">
                 <div class="flex relative">
-                  <Image
+                  <img
                     alt="gallery"
                     class="absolute inset-0 w-full h-full object-center"
-                    src={dig2}
+                    src="https://i.postimg.cc/K83XJ4kV/dig2.webp
+                    "
                   />
                   <a
                     href="https://www.freelancer.com/u/gammainnovations/portfolio/learnerbly-roas-a-digital-marketing-success-story-11267090?w=f&ngsw-bypass="
@@ -179,10 +180,10 @@ const DigitalPage = () => {
               </div>
               <div class="lg:w-1/3 sm:w-1/2 p-4">
                 <div class="flex relative">
-                  <Image
+                  <img
                     alt="gallery"
                     class="absolute inset-0 w-full h-full object-cover object-center"
-                    src={dig3}
+                    src="https://i.postimg.cc/h4MqGkRC/dig3.webp"
                   />
                   <a
                     href="https://www.freelancer.com/u/gammainnovations/portfolio/seo-success-100000-organic-clicks-in-3-months-tremgloal-11267144?w=f&ngsw-bypass="

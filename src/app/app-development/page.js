@@ -11,7 +11,7 @@ import {
 import app1 from "../assets/work2.png";
 import app2 from "../assets/app2.png";
 import app3 from "../assets/app3.png";
-import Image from "next/image";
+
 import Navbar from "../Navbar";
 
 export const metadata = {
@@ -132,10 +132,10 @@ const AppDevelopmentPage = () => {
             <div class="flex flex-wrap -m-4">
               <div class="lg:w-1/3 sm:w-1/2 p-4">
                 <div class="flex relative">
-                  <Image
+                  <img
                     alt="gallery"
                     class="absolute inset-0 w-full h-full object-center"
-                    src={app1}
+                    src="https://i.postimg.cc/3J0cmVDC/work2.webp"
                   />
                   <a href="https://www.freelancer.com/u/gammainnovations/portfolio/developed-creativelive-edtech-ios-app-11267197?w=f&ngsw-bypass=" target="_blank">
                     <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
@@ -156,10 +156,10 @@ const AppDevelopmentPage = () => {
               </div>
               <div class="lg:w-1/3 sm:w-1/2 p-4">
                 <div class="flex relative">
-                  <Image
+                  <img
                     alt="gallery"
                     class="absolute inset-0 w-full h-full"
-                    src={app2}
+                    src="https://i.postimg.cc/mkZfwwCN/app2.webp"
                   />
                   <a href="https://www.freelancer.com/u/gammainnovations/portfolio/developed-ludo-online-multiplayer-game-google-play-store-11267178" target="_blank">
                     <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
@@ -180,10 +180,10 @@ const AppDevelopmentPage = () => {
               </div>
               <div class="lg:w-1/3 sm:w-1/2 p-4">
                 <div class="flex relative">
-                  <Image
+                  <img
                     alt="gallery"
                     class="absolute inset-0 w-full h-full"
-                    src={app3}
+                    src="https://i.postimg.cc/cLppjZfJ/app3.webp"
                   />
                   <a href="https://www.freelancer.com/u/gammainnovations/portfolio/developed-watch-online-shopping-app-google-play-store-11267167" target="_blank">
                     <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">

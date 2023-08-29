@@ -9,7 +9,7 @@ import { TbDeviceDesktopCog } from "react-icons/tb";
 import web1 from "../assets/work1.png";
 import web2 from "../assets/web2.png";
 import web3 from "../assets/web3.png";
-import Image from "next/image";
+
 import Navbar from "../Navbar";
 
 export const metadata = {
@@ -140,10 +140,10 @@ const WebDevelopmentPage = () => {
             <div class="flex flex-wrap -m-4">
               <div class="lg:w-1/3 sm:w-1/2 p-4">
                 <div class="flex relative">
-                  <Image
+                  <img
                     alt="gallery"
                     class="absolute inset-0 w-full h-full object-center"
-                    src={web1}
+                    src="https://i.postimg.cc/QNynP0JY/work1.webp"
                   />
                   <a href="https://www.TremGlobal.com" target="_blank">
                     <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
@@ -163,10 +163,10 @@ const WebDevelopmentPage = () => {
               </div>
               <div class="lg:w-1/3 sm:w-1/2 p-4">
                 <div class="flex relative">
-                  <Image
+                  <img
                     alt="gallery"
                     class="absolute inset-0 w-full h-full"
-                    src={web2}
+                    src="https://i.postimg.cc/ydqxjk1Y/web2.webp"
                   />
                   <a href="https://outsavvy.com" target="_blank">
                     <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
@@ -187,10 +187,10 @@ const WebDevelopmentPage = () => {
               </div>
               <div class="lg:w-1/3 sm:w-1/2 p-4">
                 <div class="flex relative">
-                  <Image
+                  <img
                     alt="gallery"
                     class="absolute inset-0 w-full h-full"
-                    src={web3}
+                    src="https://i.postimg.cc/Njz5ydZX/web3.webp"
                   />
                   <a href="https://www.tutorix.com" target="_blank">
                     <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">

@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image";
 import logo from "./assets/logo.svg";
 import { Link } from "react-scroll";
+import Image from "next/image"
 const Navbar = ({ service }) => {
   return (
     <div>
@@ -11,12 +11,7 @@ const Navbar = ({ service }) => {
             className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
             href="/"
           >
-            <Image
-              src={logo}
-              width={48}
-              height={48}
-              alt="Gamma innovations logo"
-            />
+            <Image src={logo} alt="logo" className="w-10 h-10" />
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
             {service ? (

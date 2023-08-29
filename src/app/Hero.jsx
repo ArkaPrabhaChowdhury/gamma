@@ -2,7 +2,7 @@
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
 import hero from "./assets/hero.jpg";
-import Image from "next/image";
+
 const Hero = () => {
   return (
     <div>

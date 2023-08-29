@@ -2,9 +2,9 @@ import React from "react";
 import google from "./assets/google.svg";
 import oracle from "./assets/oracle.svg";
 import paypal from "./assets/paypal.svg";
-import gamma from "./assets/gammaprep.png";
 import microsoft from "./assets/microsoft.svg";
 import Image from "next/image";
+
 const Prep = () => {
   return (
     <div className="pb-24 pt-10 bg-white">
@@ -16,7 +16,7 @@ const Prep = () => {
           >
             Our expert developers are trained by 
           </h1>
-          <a href="https://gammaprep.com" target="_blank"><Image src={gamma} alt="gamma" className="w-36 h-12 m-4 mx-auto md:m-0 md:mt-2"/></a>
+          <a href="https://gammaprep.com" target="_blank"><img src="https://i.postimg.cc/vHNFr5Bf/gammaprep.png" alt="gamma" className="w-36 h-12 m-4 mx-auto md:m-0 md:mt-2"/></a>
         </div>
         <p className="text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto mt-2 text-gray-500">
           Mentored by Google, Oracle, Microsoft and PayPal engineers
