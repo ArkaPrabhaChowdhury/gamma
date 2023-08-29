@@ -39,7 +39,7 @@ const Hero = () => {
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <Image src={hero} width={500}
+            <img src="https://i.postimg.cc/MH9CnSCy/hero.jpg" width={500}
       height={500} alt="Developers writing code"/>
           </div>
         </div>

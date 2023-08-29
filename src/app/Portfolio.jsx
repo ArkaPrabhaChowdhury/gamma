@@ -45,10 +45,10 @@ const Portfolio = () => {
             </div>
             <div class="lg:w-1/3 sm:w-1/2 p-4">
               <div class="flex relative">
-                <Image
+                <img
                   alt="gallery"
                   class="absolute inset-0 w-full h-full object-cover object-center"
-                  src={work2}
+                  src="https://i.postimg.cc/3J0cmVDC/work2.webp"
                 />
                 <a
                   href="https://www.freelancer.com/u/gammainnovations/portfolio/developed-creativelive-edtech-ios-app-11267197?w=f&ngsw-bypass="
@@ -72,10 +72,10 @@ const Portfolio = () => {
             </div>
             <div class="lg:w-1/3 sm:w-1/2 p-4">
               <div class="flex relative">
-                <Image
+                <img
                   alt="gallery"
                   class="absolute inset-0 w-full h-full object-center"
-                  src={work3}
+                  src="https://i.postimg.cc/FzdDbk1s/work3.webp"
                 />
                 <a
                   href="https://www.freelancer.com/u/gammainnovations/portfolio/from-dubai-to-a-million-menakarts-digital-triumph-11267093?w=f&ngsw-bypass="
