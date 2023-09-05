@@ -1,8 +1,8 @@
 "use client";
 import logo from "./assets/logo.svg";
 import { Link } from "react-scroll";
-import Image from "next/image"
-const Navbar = ({ service }) => {
+import Image from "next/image";
+const Navbar = ({ service,policy}) => {
   return (
     <div>
       <header className="text-gray-600 body-font bg-white">
@@ -13,7 +13,21 @@ const Navbar = ({ service }) => {
           >
             <Image src={logo} alt="logo" className="w-10 h-10" />
           </a>
-          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          {policy ? <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+           
+              <a href="/">
+                <button className="mr-5 group transition text-lg font-medium duration-300">
+                  Home
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+                </button>
+              </a>
+            <a href="/blogs">
+              <button className="mr-5 group transition text-lg font-medium duration-300">
+                Blogs
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+              </button>
+            </a>
+          </nav> : <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
             {service ? (
               <a href="/">
                 <button className="mr-5 group transition text-lg font-medium duration-300">
@@ -73,7 +87,13 @@ const Navbar = ({ service }) => {
                 </button>
               </Link>
             )}
-          </nav>
+            <a href="/blogs">
+              <button className="mr-5 group transition text-lg font-medium duration-300">
+                Blogs
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+              </button>
+            </a>
+          </nav>}
           <Link
             to="contact"
             spy={true}

@@ -16,6 +16,8 @@ const Bottom = () => {
             © 2023 Gamma tech & services - Copyright
           </p>
           <a className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" href="/sitemap.xml">Sitemap</a>
+          <a className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" href="/privacy-policy">Privacy Policy</a>
+          <a className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" href="/terms-and-conditions">Terms and Conditions</a>
           <span className="inline-flex sm:ml-auto sm:mt-1 mt-4 justify-center sm:justify-start">
             <a
               className="text-gray-500"
