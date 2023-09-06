@@ -12,7 +12,7 @@ const BlogPage = ({ params }) => {
 
   return (
     <suppressHydrationWarning>
-    <Navbar/>
+    <Navbar policy={true}/>
     <div className=" py-16 bg-white min-h-screen">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl text-black text-center font-bold mb-4">{blog.title}</h1>
