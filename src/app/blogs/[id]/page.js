@@ -1,13 +1,12 @@
 import React from 'react';
 import blogData from '../blogData';
 import Navbar from './../../Navbar';
-import {url} from "@/app/utils" 
 import Bottom from './../../Bottom';
 const BlogPage = async ({ params }) => {
   // Find the blog post by ID
   const getBlogs = async () => {
     try {
-      const res = await fetch(`${url}/api/blogs`, {
+      const res = await fetch("https://www.gammainnovations.com/api/blogs", {
         cache: "no-store",
       });
       if (!res.ok) {
