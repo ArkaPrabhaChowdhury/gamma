@@ -3,7 +3,22 @@ import Navbar from "../Navbar";
 import BlogPreview from "./BlogPreview";
 import blogData from "./blogData";
 
-const HomePage = () => {
+const HomePage = async () => {
+  const getBlogs = async () => {
+    try {
+      const res = await fetch("http://localhost:3000/api/blogs", {
+        cache: "no-store",
+      });
+      if (!res.ok) {
+        throw new Error("Failed to fetch blogs");
+      }
+      console.log(res);
+      return res.json();
+    } catch (error) {
+      console.log("Error loading blogs", error);
+    }
+  };
+  const { blogs } = await getBlogs();
   return (
     <>
       <Navbar policy={true} />
@@ -17,15 +32,15 @@ const HomePage = () => {
               Our Latest Blogs
             </h1>
             <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">
-            Discover Insights & Innovations: Dive into Our Latest Blogs
+              Discover Insights & Innovations: Dive into Our Latest Blogs
             </p>
             <div class="flex mt-6 justify-center">
               <div class="w-16 h-1 rounded-full bg-[#006b9f] inline-flex"></div>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {blogData.map((blog) => (
-              <BlogPreview key={blog.id} blog={blog} />
+            {blogs.map((blog) => (
+              <BlogPreview key={blog._id} blog={blog} />
             ))}
           </div>
         </div>

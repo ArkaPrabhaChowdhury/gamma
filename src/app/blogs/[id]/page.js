@@ -2,27 +2,46 @@ import React from 'react';
 import blogData from '../blogData';
 import Navbar from './../../Navbar';
 import Bottom from './../../Bottom';
-const BlogPage = ({ params }) => {
+const BlogPage = async ({ params }) => {
   // Find the blog post by ID
-  const blog = blogData.find((blog) => blog.id === parseInt(params.id));
-
-  if (!blog) {
-    return <div className="container mx-auto p-8">Blog not found</div>;
-  }
-
+  const getBlogs = async () => {
+    try {
+      const res = await fetch("http://localhost:3000/api/blogs", {
+        cache: "no-store",
+      });
+      if (!res.ok) {
+        throw new Error("Failed to fetch blogs");
+      }
+      console.log(res);
+      return res.json();
+    } catch (error) {
+      console.log("Error loading blogs", error);
+    }
+  };
+  const capitalizeWords = (str) => {
+    if (!str) return ''; // Check if str is undefined or null
+    return str
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+  const { blogs } = await getBlogs();
+  console.log(blogs);
+  const blogData=blogs.find((blog) => blog.title === params.id);
+  const formattedTitle = capitalizeWords(blogData.title);
   return (
     <suppressHydrationWarning>
     <Navbar policy={true}/>
     <div className=" py-16 bg-white min-h-screen">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl text-black text-center font-bold mb-4">{blog.title}</h1>
+        <h1 className="text-3xl text-black text-center font-bold mb-4">{formattedTitle}</h1>
         <div className='w-full h-1/2 flex justify-center'>
-          <img src={blog.image} alt={blog.title} className="mb-4" />
+          <img src={blogData.image} alt={blogData.title} className="mb-4" />
         </div>
-        <div className="text-gray-600 mb-4 text-center text-md italic">{blog.description}</div>
-        <article className="py-8 font-semibold text-gray-800 text-lg prose">
+        <div className="text-gray-600 mb-4 text-center text-md italic">{blogData.description}</div>
+        <article className="py-8 text-gray-800 text-lg prose">
           {/* Render the HTML content */}
-          <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+          <div dangerouslySetInnerHTML={{ __html: blogData.content }} />
         </article>
       </div>
     </div>

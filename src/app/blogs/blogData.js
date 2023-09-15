@@ -19,7 +19,6 @@ const blogData = [
       <p><strong>Static Site Generation (SSG):</strong><br>
       Next.js goes beyond SSR by offering Static Site Generation (SSG). This means that parts of your website can be pre-rendered at build time, further improving performance and scalability.</p>
       <p>In summary, while React.js remains a valuable choice for smaller projects and certain use cases, Next.js shines when it comes to more extensive applications that demand server-side rendering, optimized performance, and simplified development. Its native support for SSR, routing, and performance optimizations make it a compelling choice for modern web development.</p>
-      
     `,
   },
   {
