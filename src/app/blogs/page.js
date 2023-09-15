@@ -1,3 +1,4 @@
+import axios from "axios";
 import Bottom from "../Bottom";
 import Navbar from "../Navbar";
 import BlogPreview from "./BlogPreview";
@@ -6,18 +7,16 @@ import blogData from "./blogData";
 const HomePage = async () => {
   const getBlogs = async () => {
     try {
-      const res=await fetch("https://www.gammainnovations.com/api/blogs", {
-        cache: "no-store",
-      });
-      if (!res.ok) {
+      const response = await axios.get("https://gamma-nextjs.vercel.app/api/blogs"); // Use a relative URL
+      if (response.status !== 200) {
         throw new Error("Failed to fetch blogs");
       }
-      console.log(res);
-      return res.json();
+      return response.data;
     } catch (error) {
-      console.log("Error loading blogs", error);
+      console.error("Error loading blogs", error);
     }
   };
+  
   const { blogs } = await getBlogs();
   return (
     <>

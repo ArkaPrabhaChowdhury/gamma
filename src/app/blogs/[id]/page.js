@@ -2,20 +2,20 @@ import React from 'react';
 import blogData from '../blogData';
 import Navbar from './../../Navbar';
 import Bottom from './../../Bottom';
+import axios from 'axios';
 const BlogPage = async ({ params }) => {
   // Find the blog post by ID
   const getBlogs = async () => {
     try {
-      const res = await fetch("https://www.gammainnovations.com/api/blogs", {
-        cache: "no-store",
-      });
-      if (!res.ok) {
+      const response = await axios.get("https://gamma-nextjs.vercel.app/api/blogs");
+      if (response.status !== 200) {
         throw new Error("Failed to fetch blogs");
       }
-      console.log(res);
-      return res.json();
+  
+      console.log(response);
+      return response.data;
     } catch (error) {
-      console.log("Error loading blogs", error);
+      console.error("Error loading blogs", error);
     }
   };
   const capitalizeWords = (str) => {
