@@ -3,21 +3,14 @@ import blogData from '../blogData';
 import Navbar from './../../Navbar';
 import Bottom from './../../Bottom';
 import axios from 'axios';
+import connectMongoDB from '@/libs/mongodb';
+import Blogs from '@/models/blogs';
 const BlogPage = async ({ params }) => {
   // Find the blog post by ID
-  const getBlogs = async () => {
-    try {
-      const response = await axios.get("https://gamma-nextjs.vercel.app/api/blogs");
-      if (response.status !== 200) {
-        throw new Error("Failed to fetch blogs");
-      }
   
-      console.log(response);
-      return response.data;
-    } catch (error) {
-      console.error("Error loading blogs", error);
-    }
-  };
+  await connectMongoDB();
+  const blogs = await Blogs.find().lean().exec();
+
   const capitalizeWords = (str) => {
     if (!str) return ''; // Check if str is undefined or null
     return str
@@ -25,7 +18,6 @@ const BlogPage = async ({ params }) => {
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
   };
-  const { blogs } = await getBlogs();
   console.log(blogs);
   const blogData=blogs.find((blog) => blog.title === params.id);
   const formattedTitle = capitalizeWords(blogData.title);

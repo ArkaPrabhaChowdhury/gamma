@@ -3,21 +3,12 @@ import Bottom from "../Bottom";
 import Navbar from "../Navbar";
 import BlogPreview from "./BlogPreview";
 import blogData from "./blogData";
-
+import Blogs from "@/models/blogs";
+import connectMongoDB from "@/libs/mongodb";
 const HomePage = async () => {
-  const getBlogs = async () => {
-    try {
-      const response = await axios.get("https://gamma-nextjs.vercel.app/api/blogs"); // Use a relative URL
-      if (response.status !== 200) {
-        throw new Error("Failed to fetch blogs");
-      }
-      return response.data;
-    } catch (error) {
-      console.error("Error loading blogs", error);
-    }
-  };
-  
-  const { blogs } = await getBlogs();
+  await connectMongoDB();
+  const blogs = await Blogs.find().lean().exec();
+
   return (
     <>
       <Navbar policy={true} />

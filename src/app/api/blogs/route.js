@@ -14,6 +14,6 @@ export async function POST(request) {
 
 export async function GET() {
   await connectMongoDB();
-  const blogs = await Blogs.find();
+  const blogs = await Blogs.find().lean().exec();
   return NextResponse.json({ blogs });
 }
