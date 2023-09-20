@@ -40,19 +40,19 @@ const AppDevelopmentPage = () => {
       >
         <div className="container px-5 py-6 md:py-24 mx-auto overflow-hidden bg-cover bg-no-repeat p-12 text-center text-gray-700 bg-custom-image">
           <div className="text-center md:mb-20">
-            <h1 className="text-4xl text-grey-700 font-semibold py-4">
+            <h1 className="text-2xl lg:text-4xl text-grey-700 font-semibold py-4">
               Looking for an app for your business & personal needs?
             </h1>
-            <p className="text-red-700 text-3xl font-semibold">
+            <p className="text-red-700 text-xl lg:text-4xl font-semibold">
               Note: You're Going To Get Your Dream App At A Discount
             </p>
             <div className="flex justify-center">
-              <p className="text-3xl text-grey-700 py-4 font-semibold text-center w-3/4">
+              <p className="text-3xl text-grey-700 py-4 hidden lg:block font-semibold text-center w-3/4">
                 Gamma Innovations App Development Service Prepared To Fulfill Your Dream. Pro Team At Your Disposal
               </p>
             </div>
             <div className="flex justify-center">
-              <hr className="w-1/2 border-b-2 border-grey-700 my-4" />
+              <hr className="lg:w-1/2 border-b-2 border-grey-700 my-4" />
             </div>
             <h1 className="text-2xl text-black py-4">
               Enter your details below to{" "}
@@ -60,7 +60,7 @@ const AppDevelopmentPage = () => {
             </h1>
           </div>
           <div className="flex justify-center">
-            <div className="px-6 w-1/2 md:px-0">
+            <div className="px-6 lg:w-1/2 md:px-0">
               <ContactForm />
             </div>
           </div>
