@@ -27,6 +27,8 @@ const ContactForm = ({ service }) => {
         return "Website development";
       case "app-development":
         return "App development";
+      case "app-dev":
+        return "App development";
       case "software-development":
         return "Customized Software development";
       case "design":

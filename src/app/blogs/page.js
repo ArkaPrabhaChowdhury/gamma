@@ -5,13 +5,14 @@ import BlogPreview from "./BlogPreview";
 import blogData from "./blogData";
 import Blogs from "@/models/blogs";
 import connectMongoDB from "@/libs/mongodb";
+import BlogNavbar from "../BlogNavbar"
 const HomePage = async () => {
   await connectMongoDB();
   const blogs = await Blogs.find().lean().exec();
 
   return (
     <>
-      <Navbar policy={true} />
+      <BlogNavbar/>
       <div className="bg-gray-100 min-h-screen py-8">
         <div className="container mx-auto px-4">
           <div class="text-center mb-20">

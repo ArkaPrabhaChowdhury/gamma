@@ -1,6 +1,6 @@
 import React from 'react';
 import blogData from '../blogData';
-import Navbar from './../../Navbar';
+import BlogNavbar from './../../BlogNavbar';
 import Bottom from './../../Bottom';
 import axios from 'axios';
 import connectMongoDB from '@/libs/mongodb';
@@ -23,7 +23,7 @@ const BlogPage = async ({ params }) => {
   const formattedTitle = capitalizeWords(blogData.title);
   return (
     <suppressHydrationWarning>
-    <Navbar policy={true}/>
+    <BlogNavbar/>
     <div className=" py-16 bg-white min-h-screen">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl text-black text-center font-bold mb-4">{formattedTitle}</h1>
