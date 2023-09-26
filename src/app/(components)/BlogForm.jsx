@@ -60,7 +60,7 @@ const BlogForm = ({ data, title }) => {
       <AdminNavbar />
       <div className="relative p-8 bg-white min-h-screen text-gray-700 sm:p-12">
         <h1 className="text-center font-bold text-2xl py-8">
-          Publish blogs here
+          Edit the blog
         </h1>
         <input
           type="text"
