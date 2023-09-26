@@ -1,4 +1,4 @@
 .bg-custom-image {
-    background-image: url('../assets/blob.svg'); /* Adjust the path as needed */
+    background-image: url('../../(components)/assets/blob.svg'); /* Adjust the path as needed */
     /* other styles */
   }
