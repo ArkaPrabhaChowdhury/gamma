@@ -2,17 +2,19 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import dynamic from 'next/dynamic'
-import AdminNavbar from "@/app/(components)/AdminNavbar";
-const AdminDashboard = () => {
-  const [originalTitle, setOriginalTitle] = useState("");
-  const [image, setImage] = useState("");
-  const [description, setDescription] = useState("");
-  const [content, setContent] = useState("");
-  const Editor = dynamic(() => import("../../(components)/Editor"), { ssr: false });
+import dynamic from "next/dynamic";
+import AdminNavbar from "./AdminNavbar";
+const BlogForm = ({ data, title }) => {
+  const id = data._id;
+  const [originalTitle, setOriginalTitle] = useState(title);
+  const [image, setImage] = useState(data.image);
+  const [description, setDescription] = useState(data.description);
+  const [content, setContent] = useState(data.content);
+  const Editor = dynamic(() => import("./Editor"), { ssr: false });
   const handleSubmit = async (e) => {
     const title = originalTitle.toLowerCase().replace(/\s+/g, "-");
     const blog = {
+      id,
       title,
       image,
       description,
@@ -24,7 +26,7 @@ const AdminDashboard = () => {
     if (title && image && description && content) {
       try {
         const res = await fetch("/api/blogs", {
-          method: "POST",
+          method: "PATCH",
           headers: {
             "Content-type": "application/json",
           },
@@ -81,10 +83,7 @@ const AdminDashboard = () => {
           value={description}
           className="border-[f0f0f0] w-full rounded border py-3 my-4 px-[14px] text-base text-body-color outline-none focus:border-gray-400 focus-visible:shadow-none"
         />
-        <Editor            
-        value={content}
-        onChange={(v) => setContent(v)}
-     />
+        <Editor value={content} onChange={(v) => setContent(v)} />
 
         <div>
           <button
@@ -100,4 +99,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default BlogForm;

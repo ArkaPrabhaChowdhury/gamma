@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import logo from "../assets/logo.svg";
+import logo from "../(components)/assets/logo.svg"
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { ToastContainer, toast } from "react-toastify";

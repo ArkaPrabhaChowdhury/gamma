@@ -1,7 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import { toast } from "react-hot-toast";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import ContactBg from "./ContactBg";
 
 const ContactForm = ({ service }) => {
@@ -44,10 +45,10 @@ const ContactForm = ({ service }) => {
 
   const handleSubmit = () => {
     if (name == "") {
-      toast("Please enter your name");
+      toast.error("Please enter your name");
       return;
     } else if (email == "") {
-      toast("Please enter your email");
+      toast.error("Please enter your email");
       return;
     }
     fetch(
@@ -69,7 +70,7 @@ const ContactForm = ({ service }) => {
         }),
       }
     );
-    toast("Thanks for reaching out! We will contact you soon.");
+    toast.success("Thanks for reaching out! We will contact you soon.");
     setMessage("");
   };
 
@@ -150,6 +151,7 @@ const ContactForm = ({ service }) => {
           <ContactBg />
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

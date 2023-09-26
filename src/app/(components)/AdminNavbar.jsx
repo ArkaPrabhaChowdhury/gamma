@@ -38,6 +38,12 @@ const AdminNavbar = () => {
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
               </button>
             </a>
+            <a href="/admin/edit-blogs">
+              <button className="mr-5 group transition text-lg font-medium duration-300">
+                Edit blogs
+                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+              </button>
+            </a>
           </nav>
 
           <button
