@@ -1,12 +1,12 @@
-import Hero from "./Hero";
-import Services from "./Services";
-import Portfolio from "./Portfolio";
-import About from "./About";
-import Contact from "./Contact";
-import Bottom from "./Bottom";
-import Prep from "./Prep";
-import Featured from "./Featured";
-import NavBar from "./Navbar";
+import Hero from "./(components)/Hero";
+import Services from "./(components)/Services";
+import Portfolio from "./(components)/Portfolio";
+import About from "./(components)/About";
+import Contact from "./(components)/Contact";
+import Bottom from "./(components)/Bottom";
+import Prep from "./(components)/Prep";
+import Featured from "./(components)/Featured";
+import NavBar from "./(components)/Navbar";
 
 const Home = () => {
   return (
