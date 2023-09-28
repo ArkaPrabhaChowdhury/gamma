@@ -1,15 +1,20 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AdminNavbar from "@/app/(components)/AdminNavbar";
-import 'react-quill/dist/quill.snow.css'
-import Quill from 'react-quill';
+import "react-quill/dist/quill.snow.css";
+const Quill = typeof window === "object" ? require("react-quill") : () => false;
 const AdminDashboard = () => {
   const [originalTitle, setOriginalTitle] = useState("");
   const [image, setImage] = useState("");
   const [description, setDescription] = useState("");
   const [content, setContent] = useState("");
+  const [hydrated, setHydrated] = useState("");
+
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
 
   const handleSubmit = async (e) => {
     const title = originalTitle.toLowerCase().replace(/\s+/g, "-");
@@ -55,7 +60,7 @@ const AdminDashboard = () => {
     }
   };
   return (
-    <div>
+    <div suppressHydrationWarning>
       <AdminNavbar />
       <div className="relative p-8 bg-white min-h-screen text-gray-700 sm:p-12">
         <h1 className="text-center font-bold text-2xl py-8">
@@ -82,8 +87,9 @@ const AdminDashboard = () => {
           value={description}
           className="border-[f0f0f0] w-full rounded border py-3 my-4 px-[14px] text-base text-body-color outline-none focus:border-gray-400 focus-visible:shadow-none"
         />
-        <Quill theme="snow" onChange={setContent}/>
-
+        {hydrated && (
+          <Quill theme="snow" onChange={setContent} suppressHydrationWarning />
+        )}
         <div>
           <button
             className="w-full mt-6 p-3 text-white transition border rounded border-gray-400 bg-[#006b9f] hover:bg-opacity-90"
