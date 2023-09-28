@@ -26,9 +26,9 @@ const AdminNavbar = () => {
             <Image src={logo} alt="logo" className="w-10 h-10" />
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a href="/">
+            <a href="/admin/dashboard">
               <button className="mr-5 group transition text-lg font-medium duration-300">
-                Home
+                Dashboard
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
               </button>
             </a>

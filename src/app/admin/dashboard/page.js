@@ -2,14 +2,15 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import dynamic from 'next/dynamic'
 import AdminNavbar from "@/app/(components)/AdminNavbar";
+import 'react-quill/dist/quill.snow.css'
+import Quill from 'react-quill';
 const AdminDashboard = () => {
   const [originalTitle, setOriginalTitle] = useState("");
   const [image, setImage] = useState("");
   const [description, setDescription] = useState("");
   const [content, setContent] = useState("");
-  const Editor = dynamic(() => import("../../(components)/Editor"), { ssr: false });
+
   const handleSubmit = async (e) => {
     const title = originalTitle.toLowerCase().replace(/\s+/g, "-");
     const blog = {
@@ -81,10 +82,7 @@ const AdminDashboard = () => {
           value={description}
           className="border-[f0f0f0] w-full rounded border py-3 my-4 px-[14px] text-base text-body-color outline-none focus:border-gray-400 focus-visible:shadow-none"
         />
-        <Editor            
-        value={content}
-        onChange={(v) => setContent(v)}
-     />
+        <Quill theme="snow" onChange={setContent}/>
 
         <div>
           <button

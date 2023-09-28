@@ -14,6 +14,13 @@ const capitalizeWords = (str) => {
     .join(" ");
 };
 
+const BlogPreview = ({ blog }) => {
+  const pathname = usePathname();
+  const router = useRouter();
+  // Format the blog title using the capitalizeWords function
+  const formattedTitle = capitalizeWords(blog.title);
+
+  
 const handleDelete = async (id) => {
   Swal.fire({
     title: "Are you sure?",
@@ -31,21 +38,15 @@ const handleDelete = async (id) => {
         body: JSON.stringify({ id }),
       });
 
-      Swal.fire("Deleted!", "The blog has been deleted.", "success");
-      router.push("/admin/edit-blogs"); 
+      Swal.fire("Deleted!", "The blog has been deleted. Please refresh the page to see the changes", "success");
+      router.replace("/admin/edit-blogs");
     }
   });
 };
 
-const BlogPreview = ({ blog }) => {
-  const pathname = usePathname();
-
-  // Format the blog title using the capitalizeWords function
-  const formattedTitle = capitalizeWords(blog.title);
 
   // Check if the URL contains the word "admin"
   const isAdmin = pathname.includes("admin");
-  const router = useRouter();
   if (isAdmin) {
     // If isAdmin is true, render without the parent Link component
     return (
