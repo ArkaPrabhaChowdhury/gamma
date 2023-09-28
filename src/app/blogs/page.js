@@ -6,7 +6,7 @@ import BlogNavbar from './../(components)/BlogNavbar';
 const HomePage = async () => {
   await connectMongoDB();
   const blogs = await Blogs.find().lean().exec();
-
+  console.log(blogs)
   return (
     <>
       <BlogNavbar/>
