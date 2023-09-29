@@ -1,14 +1,27 @@
-// Updated code
 import Bottom from "../(components)/Bottom";
 import BlogPreview from "../(components)/BlogPreview";
 import Blogs from "@/models/blogs";
 import connectMongoDB from "@/libs/mongodb";
-import BlogNavbar from './../(components)/BlogNavbar';
+import BlogNavbar from "../(components)/BlogNavbar";
 
-const HomePage = async ({ req, res }) => {
-  await connectMongoDB();
-  const blogs = await Blogs.find().lean().exec();
+const getBlogs = async () => {
+  try {
+    const res = await fetch("http://localhost:3000/api/blogs", {
+      cache: "no-store",
+    });
 
+    if (!res.ok) {
+      throw new Error("Something went wrong");
+    }
+
+    return res.json();
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export default async function HomePage() {
+  const { blogs } = await getBlogs();
   return (
     <>
       <BlogNavbar />
@@ -38,6 +51,4 @@ const HomePage = async ({ req, res }) => {
       <Bottom />
     </>
   );
-};
-
-export default HomePage;
+}
