@@ -1,15 +1,17 @@
+// Updated code
 import Bottom from "../(components)/Bottom";
 import BlogPreview from "../(components)/BlogPreview";
 import Blogs from "@/models/blogs";
 import connectMongoDB from "@/libs/mongodb";
 import BlogNavbar from './../(components)/BlogNavbar';
-const HomePage = async () => {
+
+const HomePage = async ({ req, res }) => {
   await connectMongoDB();
   const blogs = await Blogs.find().lean().exec();
-  console.log(blogs)
+
   return (
     <>
-      <BlogNavbar/>
+      <BlogNavbar />
       <div className="bg-gray-100 min-h-screen py-8">
         <div className="container mx-auto px-4">
           <div class="text-center mb-20">
