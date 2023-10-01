@@ -42,15 +42,19 @@ const BlogCollection = () => {
             <div className="w-16 h-1 rounded-full bg-[#006b9f] inline-flex"></div>
           </div>
         </div>
-        {loading ? (
-          <div className="text-black text-3xl text-center">Loading...</div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {blogs.map((blog) => (
-              <BlogPreview key={blog._id} blog={blog} />
-            ))}
-          </div>
-        )}
+        {
+            loading ? (
+              <div className="flex justify-center">
+                <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900"></div>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {blogs.map((blog) => (
+                  <BlogPreview key={blog._id} blog={blog} />
+                ))}
+              </div>
+            )
+          }
       </div>
     </div>
   );
