@@ -57,6 +57,52 @@ export default function RootLayout({ children }) {
           gtag('config', 'AW-11280671175');
           `}
         </Script>
+
+        <Script>{`
+  window.addEventListener('load', function() {
+    if (document.location.pathname.includes('/digital-marketing')) {
+      document.addEventListener('click', function(e) {
+        if (e.target.closest('button') && e.target.innerText.toLowerCase().includes('send message')) {
+          var timer = setInterval(function() {
+            if (document.querySelector('.Toastify__toast--success') && document.querySelector('.Toastify__toast--success').innerText.includes('Thanks for reaching out!')) {
+              gtag('event', 'conversion', {
+                'send_to': 'AW-11280671175/ejnJCJnZ6-sYEMfDhYMq'
+              });
+            }
+          }, 1000)
+        }
+      })
+    }
+    if (document.location.pathname.includes('/web-development')) {
+      document.addEventListener('click', function(e) {
+        if (e.target.closest('button') && e.target.innerText.toLowerCase().includes('send message')) {
+          var timer = setInterval(function() {
+            if (document.querySelector('.Toastify__toast--success') && document.querySelector('.Toastify__toast--success').innerText.includes('Thanks for reaching out!')) {
+              gtag('event', 'conversion', {
+                'send_to': 'AW-11280671175/1KK4CJOE4OsYEMfDhYMq'
+              });
+            }
+          }, 1000)
+        }
+      })
+    }
+    if (document.location.pathname.includes('/app-development')) {
+      document.addEventListener('click', function(e) {
+        if (e.target.closest('button') && e.target.innerText.toLowerCase().includes('send message')) {
+          var timer = setInterval(function() {
+            if (document.querySelector('.Toastify__toast--success') && document.querySelector('.Toastify__toast--success').innerText.includes('Thanks for reaching out!')) {
+              gtag('event', 'conversion', {
+                'send_to': 'AW-11280671175/0bpXCMCb3-sYEMfDhYMq'
+              });
+            }
+          }, 1000)
+        }
+      })
+    }
+  });
+
+`}</Script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>    
     <a href="https://wa.me/916378211571?text=Hi,%20I%20am%20interested%20in%20services%20provided%20by%20GammaInnovations.com%20and%20want%20to%20discuss%20more." class="floatXY" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
