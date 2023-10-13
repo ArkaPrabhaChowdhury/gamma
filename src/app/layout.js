@@ -46,6 +46,17 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-94NQDHPXMC');
         `}
         </Script>
+
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11280671175"></Script>
+        <Script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-11280671175');
+          `}
+        </Script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>    
     <a href="https://wa.me/916378211571?text=Hi,%20I%20am%20interested%20in%20services%20provided%20by%20GammaInnovations.com%20and%20want%20to%20discuss%20more." class="floatXY" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
