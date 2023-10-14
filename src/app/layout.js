@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
 
 <Script>{`
   document.addEventListener('click', function(e) {
-    if (e.target.closest('a[href*="wa.me/916378211571?text=Hi"]')) {
+    if (e.target.closest('a[href*="wa.me/916378211571?text=Hi,%20I%20am%20interested%20in%20services%20provided%20by%20GammaInnovations.com%20and%20want%20to%20discuss%20more."]')) {
       gtag('event', 'conversion', {
         'send_to': 'AW-11280671175/dJRJCMOb3-sYEMfDhYMq'
       });
