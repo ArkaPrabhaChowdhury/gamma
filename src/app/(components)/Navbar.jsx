@@ -94,13 +94,13 @@ const Navbar = ({ service,policy}) => {
               </button>
             </a>
           </nav>}
-          <Link
+          {/* <Link
             to="contact"
             spy={true}
             smooth={true}
             offset={30}
             duration={500}
-          >
+          > */}
             <a href="https://gammainnovations.zohobookings.in/#/customer/203853000000034018?booknow=true">
               <button className="inline-flex items-center text-white  bg-[#006b9f] border-0 py-1 px-3 focus:outline-none hover:bg-[#248dc1] rounded text-base mt-4 md:mt-0">
                 Schedule a meet
@@ -113,11 +113,11 @@ const Navbar = ({ service,policy}) => {
                   className="w-4 h-4 ml-1"
                   viewBox="0 0 24 24"
                 >
-                  {/* <path d="M5 12h14M12 5l7 7-7 7"></path> */}
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </button>
             </a>
-          </Link>
+          {/* </Link> */}
         </div>
       </header>
     </div>
