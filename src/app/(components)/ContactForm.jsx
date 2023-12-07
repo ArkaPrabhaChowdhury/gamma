@@ -101,7 +101,7 @@ const ContactForm = ({ service }) => {
         <input
           type="text"
           onChange={(e) => setPhone(e.target.value)}
-          placeholder="Your Whatsapp number (preferred)"
+          placeholder="Your contact number (preferred)"
           value={phone}
           className="border-[f0f0f0] w-full rounded border py-3 my-4 px-[14px] text-base text-body-color outline-none focus:border-gray-400 focus-visible:shadow-none"
         />
