@@ -101,7 +101,7 @@ const Contact = () => {
                      Schedule A Meet
                     </h4>
                     <a href="https://gammainnovations.zohobookings.in/#/customer/203853000000034018?booknow=true" className="text-base text-body-color">
-                      Click here to schedule a call
+                     <b> Click here to schedule a call </b>
                     </a>
                   </div>
                 </div>
